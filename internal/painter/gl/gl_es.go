@@ -11,7 +11,7 @@ import (
 
 	gl "github.com/go-gl/gl/v3.1/gles2"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/canvas"
 	"github.com/wrzfeijianshen/fyne2/theme"
 )

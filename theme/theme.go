@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 )
 
 type builtinTheme struct {

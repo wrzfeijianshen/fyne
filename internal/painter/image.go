@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/canvas"
 	"github.com/wrzfeijianshen/fyne2/internal"
 	"github.com/srwiley/oksvg"

@@ -3,7 +3,7 @@
 
 package theme
 
-import "github.com/wrzfeijianshen/fyne2"
+import fyne "github.com/wrzfeijianshen/fyne2"
 
 var fynelogo = &fyne.StaticResource{
 	StaticName: "fyne.png",

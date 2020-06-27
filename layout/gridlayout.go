@@ -3,7 +3,7 @@ package layout
 import (
 	"math"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/theme"
 )
 

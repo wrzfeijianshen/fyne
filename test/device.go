@@ -1,6 +1,6 @@
 package test
 
-import "github.com/wrzfeijianshen/fyne2"
+import fyne "github.com/wrzfeijianshen/fyne2"
 
 type device struct {
 }

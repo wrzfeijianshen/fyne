@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/driver/desktop"
 	"github.com/wrzfeijianshen/fyne2/internal/cache"
 	"github.com/wrzfeijianshen/fyne2/internal/driver"

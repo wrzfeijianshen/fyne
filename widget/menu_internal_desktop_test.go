@@ -6,7 +6,7 @@ import (
 	"image/color"
 	"testing"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/internal/cache"
 	"github.com/wrzfeijianshen/fyne2/test"
 	"github.com/wrzfeijianshen/fyne2/theme"

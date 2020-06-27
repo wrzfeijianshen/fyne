@@ -15,7 +15,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/theme"
 )
 

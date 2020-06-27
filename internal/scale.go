@@ -3,7 +3,7 @@ package internal
 import (
 	"math"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 )
 
 // ScaleInt converts a fyne coordinate in the given canvas to a screen coordinate

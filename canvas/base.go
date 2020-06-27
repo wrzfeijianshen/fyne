@@ -10,7 +10,7 @@ package canvas // import "github.com/wrzfeijianshen/fyne2/canvas"
 import (
 	"sync"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 )
 
 type baseObject struct {

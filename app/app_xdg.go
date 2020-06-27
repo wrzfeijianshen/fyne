@@ -12,7 +12,7 @@ import (
 
 	"github.com/godbus/dbus/v5"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/theme"
 )
 

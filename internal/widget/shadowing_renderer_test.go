@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	w "github.com/wrzfeijianshen/fyne2/internal/widget"
 	"github.com/wrzfeijianshen/fyne2/widget"
 )

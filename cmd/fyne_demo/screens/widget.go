@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/layout"
 	"github.com/wrzfeijianshen/fyne2/theme"
 	"github.com/wrzfeijianshen/fyne2/widget"

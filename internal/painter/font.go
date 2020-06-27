@@ -4,7 +4,7 @@ import (
 	"image"
 	"sync"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/theme"
 	"github.com/goki/freetype/truetype"
 	"golang.org/x/image/font"

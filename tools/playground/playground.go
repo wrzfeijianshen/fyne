@@ -7,7 +7,7 @@ import (
 	"image"
 	"image/png"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/internal/app"
 	"github.com/wrzfeijianshen/fyne2/theme"
 )

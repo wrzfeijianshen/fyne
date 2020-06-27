@@ -3,7 +3,7 @@ package canvas
 import (
 	"image"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 )
 
 // ImageFill defines the different type of ways an image can stretch to fill its space.

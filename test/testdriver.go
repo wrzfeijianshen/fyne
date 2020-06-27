@@ -5,7 +5,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/internal/driver"
 	"github.com/wrzfeijianshen/fyne2/internal/painter"
 	"github.com/wrzfeijianshen/fyne2/internal/painter/software"

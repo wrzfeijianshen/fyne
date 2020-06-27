@@ -20,7 +20,7 @@ import (
 
 	mobileApp "github.com/fyne-io/mobile/app"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/theme"
 )
 

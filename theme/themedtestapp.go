@@ -5,7 +5,7 @@ package theme
 import (
 	"net/url"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 )
 
 type themedApp struct {

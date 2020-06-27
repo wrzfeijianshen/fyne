@@ -1,7 +1,7 @@
 package desktop
 
 import (
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 )
 
 const (

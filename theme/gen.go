@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 )
 
 const fontFace = "NotoSans"

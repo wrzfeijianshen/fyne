@@ -3,7 +3,7 @@ package theme
 import (
 	"testing"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/stretchr/testify/assert"
 )
 

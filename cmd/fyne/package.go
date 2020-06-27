@@ -14,7 +14,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/cmd/fyne/internal/mobile"
 	ico "github.com/Kodeworks/golang-image-ico"
 	"github.com/jackmordaunt/icns"

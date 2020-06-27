@@ -3,7 +3,7 @@ package widget_test
 import (
 	"testing"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	internalWidget "github.com/wrzfeijianshen/fyne2/internal/widget"
 	"github.com/wrzfeijianshen/fyne2/test"
 	"github.com/wrzfeijianshen/fyne2/theme"

@@ -11,7 +11,7 @@ import (
 	"github.com/fyne-io/mobile/exp/f32"
 	"github.com/fyne-io/mobile/gl"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/canvas"
 	"github.com/wrzfeijianshen/fyne2/theme"
 )

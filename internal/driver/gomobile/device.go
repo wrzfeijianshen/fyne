@@ -4,7 +4,7 @@ import (
 	"github.com/wrzfeijianshen/fyne2/driver/mobile"
 	"github.com/fyne-io/mobile/event/size"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 )
 
 type device struct {

@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/driver/mobile"
 	"github.com/wrzfeijianshen/fyne2/internal"
 	"github.com/wrzfeijianshen/fyne2/internal/app"

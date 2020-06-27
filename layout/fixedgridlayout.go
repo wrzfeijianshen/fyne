@@ -1,7 +1,7 @@
 package layout
 
 import (
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 )
 
 // NewFixedGridLayout returns a new FixedGridLayout instance

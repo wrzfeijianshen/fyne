@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-gl/gl/v3.2-core/gl"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/canvas"
 	"github.com/wrzfeijianshen/fyne2/theme"
 )

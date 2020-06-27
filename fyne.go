@@ -22,4 +22,4 @@
 //
 //   	w.ShowAndRun()
 //   }
-package fyne // import "github.com/wrzfeijianshen/fyne2"
+package fyne // import fyne "github.com/wrzfeijianshen/fyne2"

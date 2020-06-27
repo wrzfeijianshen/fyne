@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/wrzfeijianshen/fyne2"
+	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/driver/desktop"
 	_ "github.com/wrzfeijianshen/fyne2/test"
 	"github.com/wrzfeijianshen/fyne2/theme"
