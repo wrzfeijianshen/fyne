@@ -12,7 +12,7 @@ import (
 )
 
 const (
-	fyneModule = fyne "github.com/wrzfeijianshen/fyne2"
+	fyneModule = "github.com/wrzfeijianshen/fyne2"
 )
 
 // Declare conformity to command interface
