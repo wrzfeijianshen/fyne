@@ -2,7 +2,7 @@
 
 package settings
 
-import "fyne.io/fyne"
+import "github.com/wrzfeijianshen/fyne2"
 
 var themeDarkPreview = &fyne.StaticResource{
 	StaticName: "widgets-dark.png",

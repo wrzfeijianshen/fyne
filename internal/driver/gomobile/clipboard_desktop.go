@@ -2,7 +2,7 @@
 
 package gomobile
 
-import "fyne.io/fyne"
+import "github.com/wrzfeijianshen/fyne2"
 
 // Content returns the clipboard content for mobile simulator runs
 func (c *mobileClipboard) Content() string {

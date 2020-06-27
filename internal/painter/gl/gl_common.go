@@ -11,11 +11,11 @@ import (
 	"golang.org/x/image/font"
 	"golang.org/x/image/math/fixed"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/canvas"
-	"fyne.io/fyne/internal/cache"
-	"fyne.io/fyne/internal/painter"
-	"fyne.io/fyne/theme"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/canvas"
+	"github.com/wrzfeijianshen/fyne2/internal/cache"
+	"github.com/wrzfeijianshen/fyne2/internal/painter"
+	"github.com/wrzfeijianshen/fyne2/theme"
 )
 
 var textures = make(map[fyne.CanvasObject]Texture, 1024)

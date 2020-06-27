@@ -5,7 +5,7 @@ We should wrap this into our current tooling before release!
 
 Please ensure that your fyne install is the latest development version (both library and "fyne" command line tool).
 ```
-go get -u fyne.io/fyne fyne.io/fyne/cmd/fyne
+go get -u github.com/wrzfeijianshen/fyne2 github.com/wrzfeijianshen/fyne2/cmd/fyne
 ```
 
 ## Android
@@ -28,11 +28,11 @@ then a provisioning profile.
 
 Apps can then be compiled simply like the following:
 
-`fyne package -os android fyne.io/fyne/cmd/hello`
+`fyne package -os android github.com/wrzfeijianshen/fyne2/cmd/hello`
 
 For iOS apps you must also specify the bundleID of the app which must match an installed provisioning profile.
 
-`fyne package -os ios -appid=com.teamid.appid fyne.io/fyne/cmd/hello`
+`fyne package -os ios -appid=com.teamid.appid github.com/wrzfeijianshen/fyne2/cmd/hello`
 
 # Distribution
 

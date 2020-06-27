@@ -3,12 +3,12 @@ package widget
 import (
 	"testing"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/driver/desktop"
-	"fyne.io/fyne/internal/cache"
-	"fyne.io/fyne/test"
-	_ "fyne.io/fyne/test"
-	"fyne.io/fyne/theme"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/driver/desktop"
+	"github.com/wrzfeijianshen/fyne2/internal/cache"
+	"github.com/wrzfeijianshen/fyne2/test"
+	_ "github.com/wrzfeijianshen/fyne2/test"
+	"github.com/wrzfeijianshen/fyne2/theme"
 	"github.com/stretchr/testify/assert"
 )
 

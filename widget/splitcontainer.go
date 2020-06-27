@@ -3,10 +3,10 @@ package widget
 import (
 	"image/color"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/canvas"
-	"fyne.io/fyne/driver/desktop"
-	"fyne.io/fyne/theme"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/canvas"
+	"github.com/wrzfeijianshen/fyne2/driver/desktop"
+	"github.com/wrzfeijianshen/fyne2/theme"
 )
 
 // Declare conformity with CanvasObject interface

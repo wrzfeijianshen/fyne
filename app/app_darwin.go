@@ -23,8 +23,8 @@ import (
 	"strings"
 	"unsafe"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/theme"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/theme"
 )
 
 func defaultTheme() fyne.Theme {

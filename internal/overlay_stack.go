@@ -3,7 +3,7 @@ package internal
 import (
 	"sync"
 
-	"fyne.io/fyne"
+	"github.com/wrzfeijianshen/fyne2"
 )
 
 // OverlayStack implements fyne.OverlayStack

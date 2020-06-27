@@ -1,7 +1,7 @@
 package gomobile
 
 import (
-	"fyne.io/fyne"
+	"github.com/wrzfeijianshen/fyne2"
 )
 
 // Declare conformity with Clipboard interface

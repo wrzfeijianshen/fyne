@@ -12,7 +12,7 @@ import (
 	"regexp"
 	"strings"
 
-	"fyne.io/fyne"
+	"github.com/wrzfeijianshen/fyne2"
 )
 
 const (

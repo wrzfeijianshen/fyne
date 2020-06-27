@@ -1,8 +1,8 @@
 package playground
 
 import (
-	"fyne.io/fyne/internal/painter/software"
-	"fyne.io/fyne/test"
+	"github.com/wrzfeijianshen/fyne2/internal/painter/software"
+	"github.com/wrzfeijianshen/fyne2/test"
 )
 
 // NewSoftwareCanvas creates a new canvas in memory that can render without hardware support

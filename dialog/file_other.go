@@ -3,8 +3,8 @@
 package dialog
 
 import (
-	"fyne.io/fyne"
-	"fyne.io/fyne/widget"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/widget"
 )
 
 func (f *fileDialog) loadPlaces() []fyne.CanvasObject {

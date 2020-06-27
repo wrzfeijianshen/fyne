@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"image/color"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/canvas"
-	"fyne.io/fyne/internal/widget"
-	"fyne.io/fyne/theme"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/canvas"
+	"github.com/wrzfeijianshen/fyne2/internal/widget"
+	"github.com/wrzfeijianshen/fyne2/theme"
 )
 
 const defaultText = "%d%%"

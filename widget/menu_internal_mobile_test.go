@@ -5,8 +5,8 @@ package widget
 import (
 	"testing"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/test"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/test"
 
 	"github.com/stretchr/testify/assert"
 )

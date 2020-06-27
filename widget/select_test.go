@@ -4,11 +4,11 @@ import (
 	"testing"
 	"time"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/layout"
-	"fyne.io/fyne/test"
-	"fyne.io/fyne/theme"
-	"fyne.io/fyne/widget"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/layout"
+	"github.com/wrzfeijianshen/fyne2/test"
+	"github.com/wrzfeijianshen/fyne2/theme"
+	"github.com/wrzfeijianshen/fyne2/widget"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -3,7 +3,7 @@ package storage
 import (
 	"strings"
 
-	"fyne.io/fyne"
+	"github.com/wrzfeijianshen/fyne2"
 )
 
 // FileFilter is an interface that can be implemented to provide a filter to a file dialog.

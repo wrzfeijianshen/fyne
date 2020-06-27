@@ -1,7 +1,7 @@
 package glfw
 
 import (
-	"fyne.io/fyne"
+	"github.com/wrzfeijianshen/fyne2"
 
 	"github.com/go-gl/glfw/v3.3/glfw"
 )

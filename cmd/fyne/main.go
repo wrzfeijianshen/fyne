@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"fyne.io/fyne"
+	"github.com/wrzfeijianshen/fyne2"
 )
 
 var commands []idCommandPair

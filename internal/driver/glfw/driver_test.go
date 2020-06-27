@@ -7,9 +7,9 @@ import (
 	"sync"
 	"testing"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/internal/cache"
-	"fyne.io/fyne/widget"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/internal/cache"
+	"github.com/wrzfeijianshen/fyne2/widget"
 
 	"github.com/stretchr/testify/assert"
 )

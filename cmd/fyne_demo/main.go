@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"net/url"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/app"
-	"fyne.io/fyne/canvas"
-	"fyne.io/fyne/cmd/fyne_demo/data"
-	"fyne.io/fyne/cmd/fyne_demo/screens"
-	"fyne.io/fyne/layout"
-	"fyne.io/fyne/theme"
-	"fyne.io/fyne/widget"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/app"
+	"github.com/wrzfeijianshen/fyne2/canvas"
+	"github.com/wrzfeijianshen/fyne2/cmd/fyne_demo/data"
+	"github.com/wrzfeijianshen/fyne2/cmd/fyne_demo/screens"
+	"github.com/wrzfeijianshen/fyne2/layout"
+	"github.com/wrzfeijianshen/fyne2/theme"
+	"github.com/wrzfeijianshen/fyne2/widget"
 )
 
 const preferenceCurrentTab = "currentTab"

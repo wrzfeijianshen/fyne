@@ -8,7 +8,7 @@ import (
 	"path"
 	"runtime"
 
-	"fyne.io/fyne"
+	"github.com/wrzfeijianshen/fyne2"
 )
 
 func bundleFile(name string, filepath string, f *os.File) {
@@ -38,7 +38,7 @@ func openFile(filename string) *os.File {
 		return nil
 	}
 
-	_, err = f.WriteString("// **** THIS FILE IS AUTO-GENERATED, PLEASE DO NOT EDIT IT **** //\n\npackage main\n\nimport \"fyne.io/fyne\"\n\n")
+	_, err = f.WriteString("// **** THIS FILE IS AUTO-GENERATED, PLEASE DO NOT EDIT IT **** //\n\npackage main\n\nimport \"github.com/wrzfeijianshen/fyne2\"\n\n")
 	if err != nil {
 		fyne.LogError("Unable to write file "+filename, err)
 		return nil

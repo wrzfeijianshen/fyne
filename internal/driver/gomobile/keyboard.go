@@ -1,8 +1,8 @@
 package gomobile
 
 import (
-	"fyne.io/fyne"
-	"fyne.io/fyne/driver/mobile"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/driver/mobile"
 	"github.com/fyne-io/mobile/app"
 )
 

@@ -3,12 +3,12 @@ package glfw
 import (
 	"image/color"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/canvas"
-	"fyne.io/fyne/driver/desktop"
-	"fyne.io/fyne/internal/widget"
-	"fyne.io/fyne/theme"
-	publicWidget "fyne.io/fyne/widget"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/canvas"
+	"github.com/wrzfeijianshen/fyne2/driver/desktop"
+	"github.com/wrzfeijianshen/fyne2/internal/widget"
+	"github.com/wrzfeijianshen/fyne2/theme"
+	publicWidget "github.com/wrzfeijianshen/fyne2/widget"
 )
 
 var _ fyne.Widget = (*menuBarItem)(nil)

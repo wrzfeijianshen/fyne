@@ -3,8 +3,8 @@ package driver
 import (
 	"math"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/internal/cache"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/internal/cache"
 )
 
 // WalkVisibleObjectTree will walk an object tree for all visible objects executing the passed functions following

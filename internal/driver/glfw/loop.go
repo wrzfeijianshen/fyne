@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/internal"
-	"fyne.io/fyne/internal/driver"
-	"fyne.io/fyne/internal/painter"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/internal"
+	"github.com/wrzfeijianshen/fyne2/internal/driver"
+	"github.com/wrzfeijianshen/fyne2/internal/painter"
 
 	"github.com/go-gl/glfw/v3.3/glfw"
 )

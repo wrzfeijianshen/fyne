@@ -4,9 +4,9 @@ import (
 	"image/color"
 	"net/url"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/driver/desktop"
-	"fyne.io/fyne/theme"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/driver/desktop"
+	"github.com/wrzfeijianshen/fyne2/theme"
 )
 
 // Hyperlink widget is a text component with appropriate padding and layout.

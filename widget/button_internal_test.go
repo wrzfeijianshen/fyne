@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/internal/widget"
-	"fyne.io/fyne/test"
-	"fyne.io/fyne/theme"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/internal/widget"
+	"github.com/wrzfeijianshen/fyne2/test"
+	"github.com/wrzfeijianshen/fyne2/theme"
 
 	"github.com/stretchr/testify/assert"
 )

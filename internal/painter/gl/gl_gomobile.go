@@ -11,9 +11,9 @@ import (
 	"github.com/fyne-io/mobile/exp/f32"
 	"github.com/fyne-io/mobile/gl"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/canvas"
-	"fyne.io/fyne/theme"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/canvas"
+	"github.com/wrzfeijianshen/fyne2/theme"
 )
 
 // Buffer represents a GL buffer

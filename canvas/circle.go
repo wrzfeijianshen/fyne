@@ -3,7 +3,7 @@ package canvas
 import (
 	"image/color"
 
-	"fyne.io/fyne"
+	"github.com/wrzfeijianshen/fyne2"
 )
 
 // Declare conformity with CanvasObject interface

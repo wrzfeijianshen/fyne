@@ -4,9 +4,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"fyne.io/fyne/canvas"
-	"fyne.io/fyne/test"
-	"fyne.io/fyne/theme"
+	"github.com/wrzfeijianshen/fyne2/canvas"
+	"github.com/wrzfeijianshen/fyne2/test"
+	"github.com/wrzfeijianshen/fyne2/theme"
 
 	"github.com/stretchr/testify/assert"
 )

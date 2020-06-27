@@ -8,8 +8,8 @@ import (
 
 	"github.com/fyne-io/mobile/app"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/storage"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/storage"
 )
 
 type fileOpen struct {

@@ -4,8 +4,8 @@ package main
 import (
 	"net/url"
 
-	"fyne.io/fyne/app"
-	"fyne.io/fyne/widget"
+	"github.com/wrzfeijianshen/fyne2/app"
+	"github.com/wrzfeijianshen/fyne2/widget"
 )
 
 func main() {

@@ -5,11 +5,11 @@ package gomobile
 import (
 	"testing"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/canvas"
-	internalWidget "fyne.io/fyne/internal/widget"
-	"fyne.io/fyne/theme"
-	"fyne.io/fyne/widget"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/canvas"
+	internalWidget "github.com/wrzfeijianshen/fyne2/internal/widget"
+	"github.com/wrzfeijianshen/fyne2/theme"
+	"github.com/wrzfeijianshen/fyne2/widget"
 
 	"github.com/stretchr/testify/assert"
 )

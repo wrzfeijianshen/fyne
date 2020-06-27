@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"fyne.io/fyne"
-	_ "fyne.io/fyne/test"
+	"github.com/wrzfeijianshen/fyne2"
+	_ "github.com/wrzfeijianshen/fyne2/test"
 	"github.com/stretchr/testify/assert"
 )
 

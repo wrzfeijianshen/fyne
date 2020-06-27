@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"fyne.io/fyne/theme"
+	"github.com/wrzfeijianshen/fyne2/theme"
 )
 
 func TestDefaultTheme(t *testing.T) {

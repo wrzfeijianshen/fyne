@@ -3,8 +3,8 @@ package layout
 import (
 	"math"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/theme"
+	"github.com/wrzfeijianshen/fyne2"
+	"github.com/wrzfeijianshen/fyne2/theme"
 )
 
 // Declare conformity with Layout interface
