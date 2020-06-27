@@ -6,9 +6,9 @@ import (
 	"sync"
 
 	fyne "github.com/wrzfeijianshen/fyne2"
-	"github.com/wrzfeijianshen/fyne2/internal/driver"
-	"github.com/wrzfeijianshen/fyne2/internal/painter"
-	"github.com/wrzfeijianshen/fyne2/internal/painter/software"
+	"github.com/wrzfeijianshen/fyne2/sdk/driver"
+	"github.com/wrzfeijianshen/fyne2/sdk/painter"
+	"github.com/wrzfeijianshen/fyne2/sdk/painter/software"
 
 	"github.com/goki/freetype/truetype"
 	"golang.org/x/image/font"

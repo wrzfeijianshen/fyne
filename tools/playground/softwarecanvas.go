@@ -1,7 +1,7 @@
 package playground
 
 import (
-	"github.com/wrzfeijianshen/fyne2/internal/painter/software"
+	"github.com/wrzfeijianshen/fyne2/sdk/painter/software"
 	"github.com/wrzfeijianshen/fyne2/test"
 )
 

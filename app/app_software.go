@@ -4,7 +4,7 @@ package app
 
 import (
 	fyne "github.com/wrzfeijianshen/fyne2"
-	"github.com/wrzfeijianshen/fyne2/internal/painter/software"
+	"github.com/wrzfeijianshen/fyne2/sdk/painter/software"
 	"github.com/wrzfeijianshen/fyne2/test"
 )
 

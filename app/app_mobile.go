@@ -6,7 +6,7 @@ package app
 
 import (
 	fyne "github.com/wrzfeijianshen/fyne2"
-	"github.com/wrzfeijianshen/fyne2/internal/driver/gomobile"
+	"github.com/wrzfeijianshen/fyne2/sdk/driver/gomobile"
 )
 
 // NewWithID returns a new app instance using the appropriate runtime driver.

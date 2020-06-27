@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/wrzfeijianshen/fyne2/canvas"
-	internalTest "github.com/wrzfeijianshen/fyne2/internal/test"
+	internalTest "github.com/wrzfeijianshen/fyne2/sdk/test"
 	"github.com/wrzfeijianshen/fyne2/test"
 
 	"github.com/stretchr/testify/assert"

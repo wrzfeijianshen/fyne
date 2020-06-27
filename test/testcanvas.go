@@ -7,7 +7,7 @@ import (
 
 	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/driver/desktop"
-	"github.com/wrzfeijianshen/fyne2/internal"
+	"github.com/wrzfeijianshen/fyne2/sdk"
 	"github.com/wrzfeijianshen/fyne2/theme"
 )
 
@@ -30,7 +30,7 @@ type testCanvas struct {
 	scale float32
 
 	content  fyne.CanvasObject
-	overlays *internal.OverlayStack
+	overlays *sdk.OverlayStack
 	focused  fyne.Focusable
 	hovered  desktop.Hoverable
 	padded   bool
@@ -222,7 +222,7 @@ func (c *testCanvas) Capture() image.Image {
 	}
 	theme := fyne.CurrentApp().Settings().Theme()
 
-	bounds := image.Rect(0, 0, internal.ScaleInt(c, c.Size().Width), internal.ScaleInt(c, c.Size().Height))
+	bounds := image.Rect(0, 0, sdk.ScaleInt(c, c.Size().Width), sdk.ScaleInt(c, c.Size().Height))
 	img := image.NewNRGBA(bounds)
 	draw.Draw(img, bounds, image.NewUniform(theme.BackgroundColor()), image.ZP, draw.Src)
 
@@ -269,7 +269,7 @@ func (c *testCanvas) objectTrees() []fyne.CanvasObject {
 // NewCanvas returns a single use in-memory canvas used for testing
 func NewCanvas() WindowlessCanvas {
 	padding := fyne.NewSize(10, 10)
-	return &testCanvas{size: padding, padded: true, scale: 1.0, overlays: &internal.OverlayStack{}}
+	return &testCanvas{size: padding, padded: true, scale: 1.0, overlays: &sdk.OverlayStack{}}
 }
 
 // NewCanvasWithPainter allows creation of an in-memory canvas with a specific painter.

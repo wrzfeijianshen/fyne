@@ -6,9 +6,9 @@ import (
 	"sync"
 
 	fyne "github.com/wrzfeijianshen/fyne2"
-	"github.com/wrzfeijianshen/fyne2/internal"
-	"github.com/wrzfeijianshen/fyne2/internal/app"
-	"github.com/wrzfeijianshen/fyne2/internal/painter"
+	"github.com/wrzfeijianshen/fyne2/sdk"
+	"github.com/wrzfeijianshen/fyne2/sdk/app"
+	"github.com/wrzfeijianshen/fyne2/sdk/painter"
 	"github.com/wrzfeijianshen/fyne2/theme"
 )
 
@@ -94,7 +94,7 @@ func (a *testApp) lastNotificationSent() *fyne.Notification {
 // It loads a test driver which creates a virtual window in memory for testing.
 func NewApp() fyne.App {
 	settings := &testSettings{scale: 1.0}
-	prefs := internal.NewInMemoryPreferences()
+	prefs := sdk.NewInMemoryPreferences()
 	test := &testApp{settings: settings, prefs: prefs, driver: NewDriver().(*testDriver)}
 	fyne.SetCurrentApp(test)
 

@@ -268,7 +268,7 @@ More detailed release notes can be found on the [releases page](https://github.c
 * TabContainer tab location can now be set with SetTabLocation()
 * Dialog windows now appear as modal popups within a window
 * Don't add a button bar to a form if it has no buttons
-* Moved driver/gl package to internal/driver/gl
+* Moved driver/gl package to sdk/driver/gl
 * Clicking/Tapping in an entry will position the cursor
 * A container with no layout will not change the position or size of it's content
 * Update the fyne_demo app to reflect the expanding feature set

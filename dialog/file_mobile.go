@@ -4,7 +4,7 @@ package dialog
 
 import (
 	fyne "github.com/wrzfeijianshen/fyne2"
-	"github.com/wrzfeijianshen/fyne2/internal/driver/gomobile"
+	"github.com/wrzfeijianshen/fyne2/sdk/driver/gomobile"
 )
 
 func (f *fileDialog) loadPlaces() []fyne.CanvasObject {

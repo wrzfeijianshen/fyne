@@ -10,11 +10,11 @@ import (
 	"time"
 
 	fyne "github.com/wrzfeijianshen/fyne2"
-	"github.com/wrzfeijianshen/fyne2/internal"
+	"github.com/wrzfeijianshen/fyne2/sdk"
 )
 
 type preferences struct {
-	*internal.InMemoryPreferences
+	*sdk.InMemoryPreferences
 
 	appID string
 }
@@ -85,7 +85,7 @@ func (p *preferences) loadFromFile(path string) error {
 
 func newPreferences() *preferences {
 	p := &preferences{}
-	p.InMemoryPreferences = internal.NewInMemoryPreferences()
+	p.InMemoryPreferences = sdk.NewInMemoryPreferences()
 
 	p.OnChange = func() {
 		err := p.save()

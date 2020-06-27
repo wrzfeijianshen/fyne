@@ -8,8 +8,8 @@ import (
 	"sync"
 
 	fyne "github.com/wrzfeijianshen/fyne2"
-	"github.com/wrzfeijianshen/fyne2/internal"
-	helper "github.com/wrzfeijianshen/fyne2/internal/app"
+	"github.com/wrzfeijianshen/fyne2/sdk"
+	helper "github.com/wrzfeijianshen/fyne2/sdk/app"
 )
 
 // Declare conformity with App interface
@@ -82,7 +82,7 @@ func (app *fyneApp) Preferences() fyne.Preferences {
 
 // New returns a new application instance with the default driver and no unique ID
 func New() fyne.App {
-	internal.LogHint("Applications should be created with a unique ID using app.NewWithID()")
+	sdk.LogHint("Applications should be created with a unique ID using app.NewWithID()")
 	return NewWithID("")
 }
 

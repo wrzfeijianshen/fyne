@@ -39,7 +39,7 @@ type App interface {
 	Quit()
 
 	// Driver returns the driver that is rendering this application.
-	// Typically not needed for day to day work, mostly internal functionality.
+	// Typically not needed for day to day work, mostly sdk functionality.
 	Driver() Driver
 
 	// UniqueID returns the application unique identifier, if set.
@@ -59,7 +59,7 @@ type App interface {
 var app App
 var appLock sync.RWMutex
 
-// SetCurrentApp is an internal function to set the app instance currently running.
+// SetCurrentApp is an sdk function to set the app instance currently running.
 func SetCurrentApp(current App) {
 	appLock.Lock()
 	defer appLock.Unlock()

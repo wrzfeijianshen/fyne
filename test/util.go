@@ -11,8 +11,8 @@ import (
 
 	fyne "github.com/wrzfeijianshen/fyne2"
 	"github.com/wrzfeijianshen/fyne2/driver/desktop"
-	"github.com/wrzfeijianshen/fyne2/internal/cache"
-	"github.com/wrzfeijianshen/fyne2/internal/driver"
+	"github.com/wrzfeijianshen/fyne2/sdk/cache"
+	"github.com/wrzfeijianshen/fyne2/sdk/driver"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

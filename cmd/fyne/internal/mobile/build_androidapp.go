@@ -19,7 +19,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/wrzfeijianshen/fyne2/cmd/fyne/internal/mobile/binres"
+	"github.com/wrzfeijianshen/fyne2/cmd/fyne/sdk/mobile/binres"
 	"golang.org/x/tools/go/packages"
 )
 
@@ -129,7 +129,7 @@ func goAndroidBuild(pkg *packages.Package, bundleID string, androidArchs []strin
 	}
 	dexData, err := base64.StdEncoding.DecodeString(dexStr)
 	if err != nil {
-		log.Fatalf("internal error bad dexStr: %v", err)
+		log.Fatalf("sdk error bad dexStr: %v", err)
 	}
 	if _, err := w.Write(dexData); err != nil {
 		return nil, err
