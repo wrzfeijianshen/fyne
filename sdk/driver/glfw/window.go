@@ -21,7 +21,7 @@ import (
 
 const (
 	scrollSpeed      = 10
-	doubleClickDelay = 500 // ms (maximum interval between clicks for double click detection)
+	doubleClickDelay = 300 // ms (检测双击的间隔值,超过此值才会发送点击)
 )
 
 var (
@@ -84,6 +84,8 @@ type window struct {
 	eventQueue chan func()
 	eventWait  sync.WaitGroup
 	pending    []func()
+
+	clickChan chan bool
 }
 
 func (w *window) Title() string {
@@ -593,7 +595,6 @@ func (w *window) mouseClicked(_ *glfw.Window, btn glfw.MouseButton, action glfw.
 		case fyne.Tappable, fyne.SecondaryTappable, fyne.Focusable, fyne.Draggable, desktop.Mouseable, desktop.Hoverable:
 			return true
 		}
-
 		return false
 	})
 	ev := new(fyne.PointEvent)
@@ -636,51 +637,84 @@ func (w *window) mouseClicked(_ *glfw.Window, btn glfw.MouseButton, action glfw.
 	}
 
 	// Check for double click/tap
-	doubleTapped := false
+
 	if action == glfw.Release && button == desktop.LeftMouseButton {
 		now := time.Now()
-		// we can safely subtract the first "zero" time as it'll be much larger than doubleClickDelay
-		if now.Sub(w.mouseClickTime).Nanoseconds()/1e6 <= doubleClickDelay && w.mouseLastClick == co {
-			if wid, ok := co.(fyne.DoubleTappable); ok {
-				doubleTapped = true
-				w.queueEvent(func() { wid.DoubleTapped(ev) })
-			}
-		}
+		bTime := now.Sub(w.mouseClickTime).Nanoseconds()/1e6 <= doubleClickDelay
 		w.mouseClickTime = now
-		w.mouseLastClick = co
-	}
 
-	_, tap := co.(fyne.Tappable)
-	_, altTap := co.(fyne.SecondaryTappable)
-	// Prevent Tapped from triggering if DoubleTapped has been sent
-	if (tap || altTap) && doubleTapped == false {
-		if action == glfw.Press {
-			w.mousePressed = co
-		} else if action == glfw.Release {
-			if co == w.mousePressed {
-				if button == desktop.RightMouseButton && altTap {
-					w.queueEvent(func() { co.(fyne.SecondaryTappable).TappedSecondary(ev) })
-				} else if button == desktop.LeftMouseButton && tap {
-					w.queueEvent(func() { co.(fyne.Tappable).Tapped(ev) })
+		if bTime {
+			chanLen := len(w.clickChan)
+			if chanLen >= 1 {
+				for i := 0; i < chanLen; i++ {
+					<-w.clickChan
+				}
+
+			} else {
+				w.clickChan <- true
+			}
+			if w.mouseLastClick == co {
+				if wid, ok := co.(fyne.DoubleTappable); ok {
+					w.queueEvent(func() { wid.DoubleTapped(ev) })
+					return
+
 				}
 			}
-			w.mousePressed = nil
+			return
 		}
+		chanLen := len(w.clickChan)
+		if chanLen >= 1 {
+			for i := 0; i < chanLen; i++ {
+				<-w.clickChan
+			}
+
+		}
+		// go
+		go func() {
+			time.Sleep(doubleClickDelay * time.Millisecond)
+			w.clickChan <- false
+		}()
+
+		// we can safely subtract the first "zero" time as it'll be much larger than doubleClickDelay
+		w.mouseLastClick = co
+		_, tap := co.(fyne.Tappable)
+		go func() {
+
+			b := <-w.clickChan
+
+			if b {
+				return
+			}
+			if tap {
+
+				w.queueEvent(func() { co.(fyne.Tappable).Tapped(ev) })
+				return
+			}
+		}()
 	}
+	_, altTap := co.(fyne.SecondaryTappable)
+	if button == desktop.RightMouseButton && altTap {
+		w.queueEvent(func() { co.(fyne.SecondaryTappable).TappedSecondary(ev) })
+		return
+	}
+
 	if wid, ok := co.(fyne.Draggable); ok {
 		if action == glfw.Press {
 			w.mouseDragPos = w.mousePos
 			w.mouseDragged = wid
 			w.mouseDraggedOffset = w.mousePos.Subtract(co.Position()).Subtract(ev.Position)
+			return
 		}
 	}
 	if action == glfw.Release && w.mouseDragged != nil {
 		if w.mouseDragStarted {
 			w.queueEvent(w.mouseDragged.DragEnd)
 			w.mouseDragStarted = false
+			return
 		}
 		if w.objIsDragged(w.mouseOver) && !w.objIsDragged(coMouse) {
 			w.mouseOut()
+			return
 		}
 		w.mouseDragged = nil
 	}
@@ -1136,6 +1170,7 @@ func (w *window) create() {
 
 		w.viewLock.Lock()
 		w.viewport = win
+		w.clickChan = make(chan bool, 2)
 		w.viewLock.Unlock()
 	})
 	if w.view() == nil { // something went wrong above, it will have been logged
